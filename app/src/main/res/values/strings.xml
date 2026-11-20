@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Student Info System</string>
+    <string name="login_title">Student Portal</string>
+    <string name="login_subtitle">Sign in to access your student records</string>
+    <string name="username_hint">Student ID or Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Sign In</string>
+    <string name="demo_hint">Demo mode: Enter any student ID and password</string>
+    <string name="dashboard_title">Student Dashboard</string>
+    <string name="student_name_label">Juan Verdeflor</string>
+    <string name="student_id_label">SIS-2023-00124</string>
+    <string name="student_course_label">BS Computer Science</string>
+    <string name="student_year_label">3rd Year • 1st Semester</string>
+    <string name="student_status_label">Enrolled</string>
+    <string name="enrolled_subjects">Enrolled Subjects</string>
+    <string name="logout_button">Log Out</string>
+</resources>

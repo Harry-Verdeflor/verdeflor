@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="noon_brown">#7A4026</color>
+    <color name="noon_gold">#D4AF37</color>
+    <color name="noon_cream">#F9F7F3</color>
+    <color name="noon_button">#FFB833</color>
+    <color name="noon_text_dark">#1E1E1E</color>
+    <color name="noon_text_muted">#6E767E</color>
+    <color name="noon_border">#E0DCD0</color>
+    <color name="noon_enrolled_bg">#E2F0D9</color>
+    <color name="noon_enrolled_text">#2D5A27</color>
+</resources>
