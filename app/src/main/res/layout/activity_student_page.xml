@@ -29,17 +29,35 @@
                 android:id="@+id/imageView"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
+                android:contentDescription="@string/logo_description"
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/images" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:layout_marginStart="12dp"
                 android:letterSpacing="0.1"
-                android:text="NOON\nUNIVERSITY"
+                android:text="@string/noon_university"
                 android:textColor="@color/white"
                 android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnStudentLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:text="@string/logout_button"
+                android:textColor="@color/white"
+                android:textSize="14sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -54,8 +72,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:letterSpacing="0.15"
-            android:text="—  STUDENT PORTAL"
-            android:textColor="@color/noon_gold"
+            android:text="@string/student_portal"
+            android:textColor="@color/white"
             android:textSize="12sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -79,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
-                android:text="Student information"
+                android:text="@string/student_information"
                 android:textColor="@color/noon_text_dark"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -88,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Your profile and academic record."
+                android:text="@string/student_info_subtitle"
                 android:textColor="@color/noon_text_muted"
                 android:textSize="14sp" />
 
@@ -119,13 +137,15 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/tvBadgeEnrolled"
                             android:letterSpacing="0.05"
-                            android:text="STUDENT PROFILE"
+                            android:text="@string/student_profile_header"
                             android:textColor="@color/noon_brown"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/tvBadgeEnrolled"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
@@ -133,7 +153,7 @@
                             android:background="@color/noon_enrolled_bg"
                             android:paddingHorizontal="12dp"
                             android:paddingVertical="4dp"
-                            android:text="Enrolled"
+                            android:text="@string/enrolled"
                             android:textColor="@color/noon_enrolled_text"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -144,7 +164,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Student name"
+                        android:text="@string/student_name_title"
                         android:textColor="@color/noon_text_muted"
                         android:textSize="13sp" />
 
@@ -152,7 +172,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Harry C. Verdeflor"
+                        android:text="@string/student_name_val"
                         android:textColor="@color/noon_text_dark"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -162,7 +182,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="Student no."
+                        android:text="@string/student_no_title"
                         android:textColor="@color/noon_text_muted"
                         android:textSize="13sp" />
 
@@ -170,7 +190,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="2024-1007755"
+                        android:text="@string/student_no_val"
                         android:textColor="@color/noon_brown"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -184,7 +204,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="28dp"
                 android:fontFamily="serif"
-                android:text="Academic information"
+                android:text="@string/academic_information"
                 android:textColor="@color/noon_text_dark"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -210,7 +230,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Program / course"
+                        android:text="@string/program_course_title"
                         android:textColor="@color/noon_text_muted"
                         android:textSize="13sp" />
 
@@ -218,7 +238,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="BSCS WITH SPECIALIZATION IN ML"
+                        android:text="@string/program_course_val"
                         android:textColor="@color/noon_text_dark"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -234,7 +254,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="College"
+                        android:text="@string/college_title"
                         android:textColor="@color/noon_text_muted"
                         android:textSize="13sp" />
 
@@ -242,7 +262,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="CCIT"
+                        android:text="@string/college_val"
                         android:textColor="@color/noon_text_dark"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -258,7 +278,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Year level &amp; section"
+                        android:text="@string/year_section_title"
                         android:textColor="@color/noon_text_muted"
                         android:textSize="13sp" />
 
@@ -266,7 +286,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="3rd year · COM243"
+                        android:text="@string/year_section_val"
                         android:textColor="@color/noon_text_dark"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -282,7 +302,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Academic year"
+                        android:text="@string/academic_year_title"
                         android:textColor="@color/noon_text_muted"
                         android:textSize="13sp" />
 
@@ -290,7 +310,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="2026–2027"
+                        android:text="@string/academic_year_val"
                         android:textColor="@color/noon_text_dark"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -306,7 +326,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Semester"
+                        android:text="@string/semester_title"
                         android:textColor="@color/noon_text_muted"
                         android:textSize="13sp" />
 
@@ -314,7 +334,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="First semester"
+                        android:text="@string/semester_val"
                         android:textColor="@color/noon_text_dark"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -327,7 +347,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Need to update your details? Contact the registrar."
+                android:text="@string/registrar_note"
                 android:textColor="@color/noon_text_muted"
                 android:textSize="13sp" />
 
@@ -337,7 +357,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="24dp"
-                android:text="© 2026 Noon University"
+                android:text="@string/copyright_text"
                 android:textAlignment="center"
                 android:textColor="@color/noon_text_muted"
                 android:textSize="12sp" />
